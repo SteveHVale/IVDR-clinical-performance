@@ -109,7 +109,7 @@ p<-ggplot() +
     aes(x = x, y = y),
     linewidth = 0.5
   ) +
-  facet_wrap(~ graph, ncol = 2,axes="all") +
+  facet_wrap(~ graph, ncol = 2,scales='free') +
   scale_x_continuous(limits = c(0, 10)) +
   scale_y_continuous(limits = c(0, 100)) +
   labs(
